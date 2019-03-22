@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+#==
+# Command for starting a docker instance with src/ mounted
+# to ~node/src, for active development.
+#==
+
+# TODO:
+#   Allow the first argument to be a port number for the local side
+#   Ensure `pwd`/src exists, we expect to be called from the parent directory but should verify it.
+docker run --rm -ti -p 8080:8080 -v `pwd`/src/:/home/node/src:rw symkat/node /bin/bash
