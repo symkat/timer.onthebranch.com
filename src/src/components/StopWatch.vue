@@ -5,7 +5,7 @@
             <button v-if="$data.state === 'started'" :disabled="is_episode_timer_running" class="button is-large is-danger" v-on:click="stopGlobalSession()">Stop Recording Session</button>
         </div>
         <div class="level-item">
-            <h1 class="title is-size-1">Happy Birthday!</h1>
+            <h1 class="title is-size-1"></h1>
         </div>
         <div class="level-item">
             <span class="is-size-1" id="time" v-html="time"></span>

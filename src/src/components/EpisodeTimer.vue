@@ -10,7 +10,7 @@
 
         <!-- Timer Display -->
         <div class="container has-text-centered" style="margin-bottom: 2em">
-            <span class="is-size-1" id="time" v-html="time"></span>
+            <span style="font-size: 7em" id="time" v-html="time"></span>
         </div>
         
         <!-- Control Buttons For Episode Timer -->
